@@ -96,8 +96,17 @@ a {
         height:50px;
         background: linear-gradient(to top, $purple, $pink);
         color: $color-2;
-      }
+
+    span {
+        display: inline-block;
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
+
+    &:hover span {
+        transform: translateY(-6px);
+    }
+ }
+}
     
     .section-fonctionnement {
         display:flex;
@@ -144,6 +153,9 @@ a {
     .card {
         padding: $padding-1;
 
+        .image-super {
+            position: relative;
+
         img {
             object-fit: cover;
             width: $width;
@@ -152,6 +164,21 @@ a {
             border-top-right-radius: $border-radius-2;
             display: block;
         }
+
+        .superpose {
+            position: absolute;
+            top: $padding-1;
+            right: $padding-1;
+            color: $green;
+            background-color: $green-light;
+            border-radius: 3px;
+            padding: $padding-1;
+            margin: $margin;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1;
+        }
+     }
 
         .icone-coeur {
             float: right;
@@ -316,8 +343,18 @@ a {
         height:50px;
         background: linear-gradient(to top, $purple, $pink);
         color: $color-2;
-     }
-   }
+        cursor: pointer;
+
+     span {
+        display: inline-block;
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+     &:hover span {
+        transform: translateY(-6px);
+    }
+ }
+}
       .section-fonctionnement {
         display:flex;
         flex-direction: row;
@@ -370,6 +407,9 @@ a {
     .card {
         padding: $padding-1;
 
+        .image-super {
+            position: relative;
+
         img {
             object-fit: cover;
             width: $width;
@@ -378,6 +418,21 @@ a {
             border-top-right-radius: $border-radius-2;
             display: block;
         } 
+
+        .superpose {
+            position: absolute;
+            top: $padding-1;
+            right: $padding-1;
+            color: $green;
+            background-color: $green-light;
+            border-radius: 3px;
+            padding: $padding-1;
+            margin: $margin;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1;
+        }
+     }
 
         .icone-coeur {
            margin: 10px;

@@ -60,6 +60,13 @@ a {
     background: linear-gradient(to top, #9356DC, #FF79DA);
     color: #ffffff;
   }
+  .section-decouverte .btn-explorez span {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .section-decouverte .btn-explorez:hover span {
+    transform: translateY(-6px);
+  }
   .section-fonctionnement {
     display: flex;
     flex-direction: column;
@@ -101,7 +108,10 @@ a {
   .card {
     padding: 10px;
   }
-  .card img {
+  .card .image-super {
+    position: relative;
+  }
+  .card .image-super img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -109,6 +119,19 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: block;
+  }
+  .card .image-super .superpose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #008766;
+    background-color: #99E2D0;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
   }
   .card .icone-coeur {
     float: right;
@@ -244,6 +267,14 @@ a {
     height: 50px;
     background: linear-gradient(to top, #9356DC, #FF79DA);
     color: #ffffff;
+    cursor: pointer;
+  }
+  .section-decouverte .btn-explorez span {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .section-decouverte .btn-explorez:hover span {
+    transform: translateY(-6px);
   }
   .section-fonctionnement {
     display: flex;
@@ -292,7 +323,10 @@ a {
   .card {
     padding: 10px;
   }
-  .card img {
+  .card .image-super {
+    position: relative;
+  }
+  .card .image-super img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -300,6 +334,19 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: block;
+  }
+  .card .image-super .superpose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #008766;
+    background-color: #99E2D0;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
   }
   .card .icone-coeur {
     margin: 10px;
