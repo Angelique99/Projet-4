@@ -82,27 +82,76 @@ h2 {
     gap: 20px;
   }
   .section-choix .btn-choix {
+    position: relative;
+    gap: 20px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
     width: 100%;
     height: 80px;
     border-radius: 20px;
-    text-align: left;
     padding-left: 20px;
     background-color: #ffffff;
     border: none;
   }
-  .section-choix .btn-choix h3 {
+  .section-choix .btn-choix .toggle-check {
+    display: none;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    gap: 20px;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper h3 {
     font-size: 16px;
   }
-  .section-choix .btn-choix p {
+  .section-choix .btn-choix .btn-choix-wrapper p {
     font-size: 14px;
   }
-  .section-choix .btn-choix span {
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .prix-valide {
     position: relative;
-    float: right;
-    bottom: 30px;
-    padding-right: 15px;
-    font-size: 14px;
     font-weight: bold;
+    font-size: 14px;
+    min-width: 80px;
+    top: 20px;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper {
+    position: absolute;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #99E2D0;
+    opacity: 0;
+    transform: translateY(-50%) translateX(10px);
+    transition: all 0.3s ease;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper .icone-check {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper:hover .icone-check-wrapper, .section-choix .btn-choix .btn-choix-wrapper:hover .prix-zone {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .section-choix .btn-choix .toggle-check:checked + .btn-choix-wrapper .icone-check-wrapper {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .section-choix .btn-choix .toggle-check:checked + .btn-choix-wrapper .prix-zone {
+    transform: translateX(-15px);
   }
   .section-commander {
     display: flex;
@@ -235,19 +284,65 @@ h2 {
     background-color: #ffffff;
     border: none;
   }
-  .section-choix .btn-choix h3 {
+  .section-choix .btn-choix .toggle-check {
+    display: none;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    gap: 20px;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper h3 {
     font-size: 16px;
   }
-  .section-choix .btn-choix p {
+  .section-choix .btn-choix .btn-choix-wrapper p {
     font-size: 14px;
   }
-  .section-choix .btn-choix span {
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .prix-valide {
     position: relative;
-    float: right;
-    bottom: 30px;
-    padding-right: 15px;
-    font-size: 14px;
     font-weight: bold;
+    font-size: 14px;
+    min-width: 80px;
+    top: 20px;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    width: 60px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #99E2D0;
+    opacity: 0;
+    transform: translateY(-50%) translateX(10px);
+    transition: all 0.3s ease;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper .icone-check {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .section-choix .btn-choix .btn-choix-wrapper:hover .icone-check-wrapper, .section-choix .btn-choix .btn-choix-wrapper:hover .prix-zone {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .section-choix .btn-choix .toggle-check:checked + .btn-choix-wrapper .icone-check-wrapper {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .section-choix .btn-choix .toggle-check:checked + .btn-choix-wrapper .prix-zone {
+    transform: translateX(-15px);
   }
   .section-commander {
     display: flex;

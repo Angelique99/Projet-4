@@ -116,15 +116,30 @@ h1 {
   gap: 20px;
 
 .btn-choix {
+  position: relative;
+  gap: 20px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
   width: $width;
   height: 80px;
   border-radius: $border-radius-2;
-  text-align: left;
   padding-left: $padding-2;
   background-color: $color-2;
   border: none;
 
+  .toggle-check {
+    display: none;
+  }
 
+
+.btn-choix-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  gap: 20px;
+  
 h3 {
   font-size: 16px;
 }
@@ -133,15 +148,58 @@ p {
   font-size: 14px;
 }
 
-span {
+.prix-zone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+
+.prix-valide {
   position: relative;
-  float: right;
-  bottom: 30px;
-  padding-right: 15px;
-  font-size: 14px;
   font-weight: bold;
+  font-size: 14px; 
+  min-width: 80px;
+  top: 20px;
+}
+
+.icone-check-wrapper {
+  position: absolute;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: $green-light;
+  opacity: 0;
+  transform: translateY(-50%) translateX(10px);
+  transition: all 0.3s ease;
+
+.icone-check {
+  font-size: 18px;
+  color: $color-2;
 }
 }
+}
+
+      &:hover .icone-check-wrapper,
+      &:hover .prix-zone {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .toggle-check:checked + .btn-choix-wrapper .icone-check-wrapper {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+      .toggle-check:checked + .btn-choix-wrapper .prix-zone {
+      transform: translateX(-15px);
+    }
+ }
 }
 
 .section-commander {
@@ -167,8 +225,6 @@ span {
     }
   }
 }
-
-
 
 .footer-menu {
   background-color: $grey-dark;
@@ -202,6 +258,7 @@ span {
   }
 }
 }
+
 
 @media (max-width:1440px) and (min-width:768px) {
 .body-menu {
@@ -299,6 +356,18 @@ h1 {
   background-color: $color-2;
   border: none;
 
+.toggle-check {
+  display: none;
+}
+
+.btn-choix-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  gap: 20px;
+
 h3 {
   font-size: 16px;
 }
@@ -307,15 +376,58 @@ p {
   font-size: 14px;
 }
 
-span {
+.prix-zone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+
+.prix-valide {
   position: relative;
-  float: right;
-  bottom: 30px;
-  padding-right: 15px;
-  font-size: 14px;
   font-weight: bold;
-  }
- }
+  font-size: 14px; 
+  min-width: 80px;
+  top: 20px;
+}
+
+.icone-check-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -10px;
+  width: 60px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: $green-light;
+  opacity: 0;
+  transform: translateY(-50%) translateX(10px);
+  transition: all 0.3s ease;
+
+.icone-check {
+  font-size: 18px;
+  color: $color-2;
+}
+}
+}
+
+&:hover .icone-check-wrapper,
+&:hover .prix-zone {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.toggle-check:checked + .btn-choix-wrapper .icone-check-wrapper {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toggle-check:checked + .btn-choix-wrapper .prix-zone {
+  transform: translateX(-15px);
+}
+}
 }
 
 .section-commander {
