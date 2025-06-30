@@ -456,13 +456,13 @@ span {
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
-  padding: 10px;
+  margin: 5px;
 }
 
 .icone-footer {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .desktop-footer-m {
@@ -476,6 +476,7 @@ span {
 
   p {
     color: white;
+    padding: 10px;
   }
 
   a { 
