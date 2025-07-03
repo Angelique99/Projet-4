@@ -14,17 +14,17 @@ $blue-dark:#003A68;
 $linear-gardient:linear-gradient(to top, $purple, $pink);
 
 $width: 100%;
-$border-radius-2: 20px;
+$border-radius-2: 1.25rem;
 $padding-1: 10px;
-$padding-2: 20px;
+$padding-2: 1.25rem;
 $padding-3: 30px;
 $padding-5: 50px;
 $margin: 5px;
 $gap-1: 10px;
-$gap-2: 20px;
+$gap-2: 1.25rem;
 $gap-3: 30px;
 $font-size-1: 18px;
-$font-size-2: 24px;
+$font-size-2: 1.5rem;
 $text-decoration: none;
 
 * {
@@ -35,9 +35,9 @@ a {
     text-decoration: $text-decoration;
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 768px) {
     .body-style {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .container {
@@ -72,7 +72,7 @@ a {
         box-shadow: 2px 2px 2px 2px $grey-border;
         background-color: $grey-medium;
         padding:5px;
-        margin: 0px;
+        margin: 0rem;
 
        .icone-position {
            display: flex;
@@ -188,8 +188,8 @@ a {
             position: relative;
             cursor: pointer;
             display: inline-block;
-            width: 24px;
-            height: 24px;
+            width: 1.5rem;
+            height: 1.5rem;
            
         i {
            position: absolute;
@@ -279,10 +279,10 @@ a {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
 
     .body-style {
-        margin: 0px;
+        margin: 0rem;
     }
 
     .container {
@@ -441,8 +441,8 @@ a {
            position: relative;
            cursor: pointer;
            display: inline-block;
-           width: 24px;
-           height: 24px;
+           width: 1.5rem;
+           height: 1.5rem;
            float: right;
 
         i {

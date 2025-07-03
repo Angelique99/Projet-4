@@ -7,7 +7,7 @@ a {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: underline;
   text-decoration-color: #99E2D0;
   padding-right: 60%;
@@ -15,14 +15,14 @@ h2 {
 
 @media (max-width: 767.99px) {
   .body-menu {
-    margin: 0px;
+    margin: 0rem;
   }
   .container-menu {
     overflow: hidden;
   }
   h1 {
     font-family: Shrikhand, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   h1 .icone-coeur {
     float: right;
@@ -32,8 +32,8 @@ h2 {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   h1 .icone-coeur i {
     position: absolute;
@@ -56,15 +56,23 @@ h2 {
   }
   .main-menu {
     background-color: #F6F6F6;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    padding: 1.25rem;
   }
   .header-menu {
     text-align: center;
   }
+  .btn-retour {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+  }
   .logo-menu {
-    width: 60%;
+    width: 50%;
     padding: 10px;
   }
   .image-menu {
@@ -77,16 +85,16 @@ h2 {
   .section-choix {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .section-choix .btn-choix {
     position: relative;
-    gap: 20px;
+    gap: 1.25rem;
     cursor: pointer;
-    width: 100%;
-    height: 80px;
-    border-radius: 20px;
-    padding-left: 20px;
+    width: 95%;
+    height: 5rem;
+    border-radius: 1.25rem;
+    padding-left: 1.25rem;
     background-color: #ffffff;
     border: none;
   }
@@ -99,7 +107,7 @@ h2 {
     align-items: center;
     height: 100%;
     position: relative;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .section-choix .btn-choix .btn-choix-wrapper h3 {
     font-size: 14px;
@@ -110,7 +118,7 @@ h2 {
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     transform: translateX(0);
     transition: transform 0.3s ease;
   }
@@ -118,8 +126,8 @@ h2 {
     position: relative;
     font-weight: bold;
     font-size: 14px;
-    min-width: 80px;
-    top: 20px;
+    min-width: 5rem;
+    top: 1.25rem;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper {
     position: absolute;
@@ -128,7 +136,7 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 60px;
-    height: 80px;
+    height: 5rem;
     border-radius: 15px;
     background-color: #99E2D0;
     opacity: 0;
@@ -176,7 +184,7 @@ h2 {
     font-family: shrikhand, sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px;
     margin: 5px;
   }
@@ -199,7 +207,7 @@ h2 {
 }
 @media (min-width: 768px) {
   .body-menu {
-    margin: 0px;
+    margin: 0rem;
   }
   .container-menu {
     overflow: hidden;
@@ -219,8 +227,8 @@ h2 {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   h1 .icone-coeur i {
     position: absolute;
@@ -243,17 +251,25 @@ h2 {
   }
   .main-menu {
     background-color: #F6F6F6;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    padding: 1.25rem;
     margin: 60px;
   }
   .header-menu {
     text-align: center;
   }
+  .btn-retour {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+  }
   .logo-menu {
-    width: 20%;
-    padding: 20px;
+    width: 30%;
+    padding: 1.25rem;
   }
   .image-menu {
     width: 100%;
@@ -266,14 +282,14 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .section-choix .btn-choix {
     width: 70%;
-    height: 80px;
-    border-radius: 20px;
+    height: 5rem;
+    border-radius: 1.25rem;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 1.25rem;
     background-color: #ffffff;
     border: none;
   }
@@ -286,10 +302,10 @@ h2 {
     align-items: center;
     height: 100%;
     position: relative;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .section-choix .btn-choix .btn-choix-wrapper h3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .section-choix .btn-choix .btn-choix-wrapper p {
     font-size: 14px;
@@ -297,7 +313,7 @@ h2 {
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     transform: translateX(0);
     transition: transform 0.3s ease;
   }
@@ -305,8 +321,8 @@ h2 {
     position: relative;
     font-weight: bold;
     font-size: 14px;
-    min-width: 80px;
-    top: 20px;
+    min-width: 5rem;
+    top: 1.25rem;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper {
     position: absolute;
@@ -315,7 +331,7 @@ h2 {
     justify-content: center;
     right: -15px;
     width: 60px;
-    height: 80px;
+    height: 5rem;
     border-radius: 15px;
     background-color: #99E2D0;
     opacity: 0;

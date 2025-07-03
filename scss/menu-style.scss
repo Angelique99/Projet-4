@@ -15,8 +15,10 @@ $blue-dark:#003A68;
 $linear-gardient:linear-gradient(to top, $purple, $pink);
 
 $width:100%;
-$border-radius-2: 20px;
-$padding-2: 20px;
+$border-radius-2: 1.25rem;
+$padding-1: 10px;
+$padding-2: 1.25rem;
+$gap-2: 1.25rem;
 
 * {
   font-family: $font-stack;
@@ -27,16 +29,17 @@ a {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: underline;
   text-decoration-color: $green-light;
   padding-right: 60%;
 }
 
+
 @media (max-width: 767.99px) {
 
 .body-menu {
-  margin: 0px;
+  margin: 0rem;
 }
 
 .container-menu {
@@ -45,7 +48,7 @@ h2 {
 
 h1 {
   font-family: Shrikhand, sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
 
   .icone-coeur {
     float: right;
@@ -55,8 +58,8 @@ h1 {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 
     i {
       position: absolute;
@@ -93,12 +96,21 @@ h1 {
 }
 
 .header-menu {
-text-align: center;
+ text-align: center;
+}
+
+.btn-retour {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
 }
 
 .logo-menu {
-width: 60%;
-padding: 10px;
+width: 50%;
+padding: $padding-1;
 }
 
 .image-menu {
@@ -111,14 +123,14 @@ padding: 10px;
 .section-choix {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: $gap-2;
 
 .btn-choix {
   position: relative;
-  gap: 20px;
+  gap: $gap-2;
   cursor: pointer;
-  width: $width;
-  height: 80px;
+  width: 95%;
+  height: 5rem;
   border-radius: $border-radius-2;
   padding-left: $padding-2;
   background-color: $color-2;
@@ -135,7 +147,7 @@ padding: 10px;
   align-items: center;
   height: 100%;
   position: relative;
-  gap: 20px;
+  gap: $gap-2;
   
 h3 {
   font-size: 14px;
@@ -148,7 +160,7 @@ p {
 .prix-zone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   transform: translateX(0);
   transition: transform 0.3s ease;
 
@@ -156,8 +168,8 @@ p {
   position: relative;
   font-weight: bold;
   font-size: 14px; 
-  min-width: 80px;
-  top: 20px;
+  min-width: 5rem;
+  top: 1.25rem;
 }
 
 .icone-check-wrapper {
@@ -167,7 +179,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 60px;
-  height: 80px;
+  height: 5rem;
   border-radius: 15px;
   background-color: $green-light;
   opacity: 0;
@@ -229,8 +241,8 @@ p {
     font-family: shrikhand, sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: $padding-1;
     margin: 5px;
   }
 
@@ -258,7 +270,7 @@ p {
 
 @media (min-width:768px) {
 .body-menu {
-  margin: 0px;
+  margin: 0rem;
 }
 
 .container-menu {
@@ -280,8 +292,8 @@ h1 {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 
     i {
       position: absolute;
@@ -322,9 +334,18 @@ h1 {
 text-align: center;
 }
 
+.btn-retour {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+}
+
 .logo-menu {
-  width: 20%;
-  padding: 20px;
+  width: 30%;
+  padding: $padding-2;
 }
 
 .image-menu {
@@ -338,11 +359,11 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: $gap-2;
 
 .btn-choix {
   width: 70%;
-  height: 80px;
+  height: 5rem;
   border-radius: $border-radius-2;
   text-align: left;
   padding-left: $padding-2;
@@ -359,10 +380,10 @@ text-align: center;
   align-items: center;
   height: 100%;
   position: relative;
-  gap: 20px;
+  gap: $gap-2;
 
 h3 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 p {
@@ -372,7 +393,7 @@ p {
 .prix-zone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   transform: translateX(0);
   transition: transform 0.3s ease;
 
@@ -380,8 +401,8 @@ p {
   position: relative;
   font-weight: bold;
   font-size: 14px; 
-  min-width: 80px;
-  top: 20px;
+  min-width: 5rem;
+  top: 1.25rem;
 }
 
 .icone-check-wrapper {
@@ -391,7 +412,7 @@ p {
   justify-content: center;
   right: -15px;
   width: 60px;
-  height: 80px;
+  height: 5rem;
   border-radius: 15px;
   background-color: $green-light;
   opacity: 0;
@@ -476,7 +497,7 @@ span {
 
   p {
     color: white;
-    padding: 10px;
+    padding: $padding-1;
   }
 
   a { 
