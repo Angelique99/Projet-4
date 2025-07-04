@@ -119,8 +119,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transform: translateX(0);
+    transform: translateX(15px);
     transition: transform 0.3s ease;
+    opacity: 0.3 ease;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .prix-valide {
     position: relative;
@@ -140,6 +141,7 @@ h2 {
     border-radius: 15px;
     background-color: #99E2D0;
     opacity: 0;
+    transform: translateX(15px);
     transition: all 0.3s ease;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper .icone-check {
@@ -314,8 +316,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transform: translateX(0);
+    transform: translateX(15px);
     transition: transform 0.3s ease;
+    opacity: 0.3 ease;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .prix-valide {
     position: relative;
@@ -335,6 +338,7 @@ h2 {
     border-radius: 15px;
     background-color: #99E2D0;
     opacity: 0;
+    transform: translateX(15px);
     transition: all 0.3s ease;
   }
   .section-choix .btn-choix .btn-choix-wrapper .prix-zone .icone-check-wrapper .icone-check {

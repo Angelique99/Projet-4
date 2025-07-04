@@ -161,8 +161,8 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transform: translateX(0);
-  transition: transform 0.3s ease;
+  transform: translateX(15px);
+  transition: transform 0.3s ease; opacity: 0.3 ease;
 
 .prix-valide {
   position: relative;
@@ -183,6 +183,7 @@ p {
   border-radius: 15px;
   background-color: $green-light;
   opacity: 0;
+  transform: translateX(15px);
   transition: all 0.3s ease;
 
 .icone-check {
@@ -394,8 +395,8 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transform: translateX(0);
-  transition: transform 0.3s ease;
+  transform: translateX(15px);
+  transition: transform 0.3s ease; opacity: 0.3 ease;
 
 .prix-valide {
   position: relative;
@@ -416,6 +417,7 @@ p {
   border-radius: 15px;
   background-color: $green-light;
   opacity: 0;
+  transform: translateX(15px);
   transition: all 0.3s ease;
 
 .icone-check {
