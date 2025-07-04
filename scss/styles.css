@@ -93,7 +93,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7%;
+    width: 24px;
+    height: 24px;
     padding: 5px;
     border-radius: 50%;
     margin-left: -35%;
@@ -303,7 +304,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7%;
+    width: 24px;
+    height: 24px;
     padding: 5px;
     border-radius: 50%;
     margin-left: -45%;
