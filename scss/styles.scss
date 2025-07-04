@@ -125,6 +125,7 @@ a {
         width:80%;
         height:70px;
         gap: $gap-2;
+        color: $color-1;
         background-color: $grey-light;
         filter: drop-shadow(2px 4px 6px $grey-border);
         border: none;
@@ -372,6 +373,7 @@ a {
         width:80%;
         height:70px;
         gap: $gap-2;
+        color: $color-1;
         background-color: $grey-light;
         filter: drop-shadow(2px 4px 6px $grey-border);
         border: none;
@@ -384,7 +386,7 @@ a {
         width: 7%;
         padding: 5px;
         border-radius: 50%;
-        margin-left: -25%;
+        margin-left: -45%;
         background-color: $purple;
         color: $color-2;
       }
