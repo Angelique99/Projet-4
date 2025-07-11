@@ -87,7 +87,10 @@ a {
     color: #000000;
     background-color: #F6F6F6;
     filter: drop-shadow(2px 4px 6px lightgrey);
+    padding-left: 50px;
     border: none;
+    position: relative;
+    box-sizing: border-box;
   }
   .section-fonctionnement .chiffre {
     display: flex;
@@ -97,9 +100,15 @@ a {
     height: 24px;
     padding: 5px;
     border-radius: 50%;
-    margin-left: -35%;
     background-color: #9356DC;
     color: #ffffff;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .section-fonctionnement i {
+    flex-shrink: 0;
   }
   .section-restaurant {
     background-color: #F6F6F6;
@@ -308,7 +317,7 @@ a {
     height: 24px;
     padding: 5px;
     border-radius: 50%;
-    margin-left: -45%;
+    margin-left: -40%;
     background-color: #9356DC;
     color: #ffffff;
   }
@@ -524,7 +533,7 @@ a {
     height: 24px;
     padding: 5px;
     border-radius: 50%;
-    margin-left: -25%;
+    margin-left: -15%;
     background-color: #9356DC;
     color: #ffffff;
   }

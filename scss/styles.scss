@@ -128,7 +128,10 @@ a {
         color: $color-1;
         background-color: $grey-light;
         filter: drop-shadow(2px 4px 6px $grey-border);
+        padding-left: 50px;
         border: none;
+        position: relative;
+        box-sizing: border-box;
       }
 
       .chiffre {
@@ -139,10 +142,17 @@ a {
         height: 24px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: -35%;
         background-color: $purple;
         color: $color-2;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
       }
+
+        i {
+            flex-shrink: 0;
+        }
     }
 
     .section-restaurant {
@@ -388,7 +398,7 @@ a {
         height: 24px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: -45%;
+        margin-left: -40%;
         background-color: $purple;
         color: $color-2;
       }
@@ -643,7 +653,7 @@ a {
         height: 24px;
         padding: 5px;
         border-radius: 50%;
-        margin-left: -25%;
+        margin-left: -15%;
         background-color: $purple;
         color: $color-2;
       }
