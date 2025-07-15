@@ -6,11 +6,8 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 1.25rem;
-  text-decoration: underline;
-  text-decoration-color: #99E2D0;
-  padding-right: 62%;
+.style-m {
+  display: flex;
 }
 
 @media (max-width: 767.99px) {
@@ -19,6 +16,11 @@ h2 {
   }
   .container-menu {
     overflow: hidden;
+  }
+  h2 {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-color: #99E2D0;
   }
   h1 {
     font-family: Shrikhand, sans-serif;
@@ -213,6 +215,12 @@ h2 {
   }
   .container-menu {
     overflow: hidden;
+  }
+  h2 {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-color: #99E2D0;
+    width: 70%;
   }
   h1 {
     font-family: Shrikhand, sans-serif;

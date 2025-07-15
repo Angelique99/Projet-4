@@ -28,11 +28,8 @@ a {
   text-decoration: $text-decoration;
 }
 
-h2 {
-  font-size: 1.25rem;
-  text-decoration: underline;
-  text-decoration-color: $green-light;
-  padding-right: 62%;
+.style-m {
+  display: flex;
 }
 
 
@@ -44,6 +41,12 @@ h2 {
 
 .container-menu {
   overflow: hidden;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  text-decoration-color: $green-light;
 }
 
 h1 {
@@ -276,6 +279,13 @@ p {
 
 .container-menu {
   overflow: hidden;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  text-decoration-color: $green-light;
+  width: 70%;
 }
 
 h1 {
