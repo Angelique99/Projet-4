@@ -11,7 +11,7 @@ a {
   position: relative;
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 768px) {
   .body-style {
     margin: 0rem;
   }
@@ -84,6 +84,7 @@ a {
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 1.25rem;
     width: 80%;
     height: 70px;
@@ -222,7 +223,7 @@ a {
     text-decoration: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .body-style {
     margin: 0rem;
   }
@@ -297,6 +298,7 @@ a {
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 1.25rem;
     width: 80%;
     height: 70px;
